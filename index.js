@@ -788,7 +788,9 @@ app.get("/statistic", function(req, res){
     });
 });
 
-// Serividor rodadno
-app.listen(3000, function(){
-    console.log("Servidor rodando na URL http://localhost:3000")
-    });
+// const port = process.env.PORT || 3000;
+// app.listen(port, function() {
+//   console.log(`Servidor rodando na porta ${port}`);
+// });
+
+module.exports = app;
